@@ -7,130 +7,357 @@
 
 <style>
 
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f5f7fa;
-    color: #333;
+* {
+    box-sizing: border-box;
 }
 
-header {
-    background: #111827;
-    color: white;
-    padding: 60px;
-    text-align: center;
+
+body {
+
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#050816;
+    color:white;
+
 }
+
+
+/* 顶部导航 */
+
+nav {
+
+    background:#0f172a;
+    padding:20px;
+    text-align:center;
+    position:sticky;
+    top:0;
+
+}
+
+
+nav a {
+
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+
+}
+
+
+nav a:hover {
+
+    color:#38bdf8;
+
+}
+
+
+
+/* 首页 */
+
+.hero {
+
+    text-align:center;
+    padding:80px 20px;
+    background:
+    linear-gradient(135deg,#020617,#1d4ed8);
+
+}
+
+
+.avatar {
+
+    width:160px;
+    height:160px;
+    border-radius:50%;
+    border:5px solid white;
+
+}
+
+
+.hero h1 {
+
+    font-size:48px;
+    margin-bottom:10px;
+
+}
+
+
+.hero h2 {
+
+    color:#38bdf8;
+
+}
+
+
+
+.button {
+
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+
+}
+
+
+
+/* 内容区域 */
 
 section {
-    max-width: 900px;
-    margin: 30px auto;
-    background: white;
-    padding: 30px;
-    border-radius: 12px;
+
+    max-width:1000px;
+    margin:40px auto;
+    padding:40px;
+    background:#111827;
+    border-radius:15px;
+
 }
 
-h1 {
-    font-size: 42px;
+
+section h2 {
+
+    color:#38bdf8;
+
 }
 
-h2 {
-    color: #2563eb;
-}
+
+
+/* 技能卡片 */
 
 .card {
-    margin-top:20px;
+
+    background:#1e293b;
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+
 }
+
+
+
+footer {
+
+    text-align:center;
+    padding:30px;
+    color:#94a3b8;
+
+}
+
 
 </style>
 
 </head>
 
 
+
 <body>
 
 
-<header>
+<nav>
 
-<h1>XinYue Cheng</h1>
+<a href="#home">Home</a>
 
-<h2>IT Engineering Project Supervisor</h2>
+<a href="#about">About</a>
+
+<a href="#skills">Skills</a>
+
+<a href="#projects">Projects</a>
+
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+
+<div class="hero" id="home">
+
+
+<img class="avatar" src="https://via.placeholder.com/160">
+
+
+<h1>
+XinYue Cheng
+</h1>
+
+
+<h2>
+IT Engineering Project Supervisor
+</h2>
+
 
 <p>
-Enterprise Systems | Infrastructure | Database Operations
+Enterprise Systems | Cloud Infrastructure | Database Operations
 </p>
 
-</header>
 
-
-
-<section>
-
-<h2>About Me</h2>
-
-<p>
-I am an IT Engineering Project Supervisor specializing in enterprise system upgrades, infrastructure operations, database management and technical project coordination.
-</p>
-
-</section>
-
-
-
-<section>
-
-<h2>Professional Skills</h2>
-
-<div class="card">
-
-<p>
-✔ System Operations</p>
-
-<p>
-✔ Database Management</p>
-
-<p>
-✔ Cloud Infrastructure</p>
-
-<p>
-✔ Cybersecurity</p>
-
-<p>
-✔ IT Project Management</p>
+<a class="button" href="https://www.linkedin.com">
+LinkedIn
+</a>
 
 
 </div>
 
+
+
+
+
+<section id="about">
+
+<h2>
+About Me
+</h2>
+
+
+<p>
+
+I am an IT Engineering Project Supervisor specializing in enterprise system upgrades, infrastructure operations, database management and technology project coordination.
+
+</p>
+
+
 </section>
 
 
 
-<section>
 
-<h2>Experience</h2>
 
-<p>
-IT Engineering Project Supervisor
-</p>
 
-<p>
-Managing enterprise technology projects, supporting system improvements, coordinating technical teams and maintaining reliable IT operations.
-</p>
+<section id="skills">
+
+
+<h2>
+Professional Skills
+</h2>
+
+
+<div class="card">
+Cloud Infrastructure (AWS)
+</div>
+
+
+<div class="card">
+Database Management
+</div>
+
+
+<div class="card">
+System Operations
+</div>
+
+
+<div class="card">
+Cybersecurity
+</div>
+
+
+<div class="card">
+IT Project Management
+</div>
+
+
 
 </section>
 
 
 
-<section>
 
-<h2>Contact</h2>
+
+
+
+<section id="projects">
+
+
+<h2>
+Projects
+</h2>
+
+
+
+<div class="card">
+
+<h3>
+Enterprise System Upgrade
+</h3>
+
+<p>
+Managed enterprise technology upgrade projects and improved system reliability.
+</p>
+
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>
+Infrastructure Operations
+</h3>
+
+<p>
+Supported servers, databases, cloud environments and technical operations.
+</p>
+
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+Technical Team Coordination
+</h3>
+
+<p>
+Coordinated engineers and operational teams to deliver IT solutions.
+</p>
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+<section id="contact">
+
+
+<h2>
+Contact
+</h2>
+
 
 <p>
 LinkedIn | Email
 </p>
 
+
 </section>
 
 
 
+
+<footer>
+
+© 2026 XinYue Cheng
+
+</footer>
+
+
+
 </body>
+
 
 </html>
